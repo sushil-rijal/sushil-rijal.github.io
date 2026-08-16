@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sushil Rijal — Economics, Data, Policy & Infrastructure. Research, quantitative projects, publication, and code.">
+  <meta name="description" content="Sushil Rijal — Economics, Data, Policy & Infrastructure. Research, quantitative projects, publications, and code.">
   <title>Sushil Rijal | Economics, Data, Policy & Infrastructure</title>
   <style>
     :root{
@@ -21,20 +21,22 @@
     a{color:inherit;text-decoration:none}
     a:hover{text-decoration:underline;text-underline-offset:4px}
     .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
-    header{background:var(--forest);color:var(--paper);padding:28px 0 88px}
-    nav{display:flex;justify-content:space-between;align-items:center;gap:28px;font-size:14px}
-    .brand{font-weight:700;letter-spacing:.01em}
+    header{background:var(--forest);color:var(--paper);padding:26px 0 86px}
+    nav{display:flex;justify-content:flex-end;align-items:center;gap:24px;font-size:14px;flex-wrap:wrap}
     .navlinks{display:flex;gap:22px;flex-wrap:wrap;justify-content:flex-end}
-    .hero{padding-top:92px;max-width:780px}
-    .eyebrow,.section-label{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
-    h1{font-size:clamp(46px,8vw,78px);line-height:1.02;margin:10px 0 16px;letter-spacing:-.045em}
-    .identity{font-size:clamp(19px,3vw,27px);font-weight:600;margin-bottom:26px}
-    .lede{font-size:19px;max-width:720px;color:#e4e8e3}
-    .actions{display:flex;gap:20px;flex-wrap:wrap;margin-top:34px;font-weight:650}
+    .hero{padding-top:90px;max-width:810px}
+    h1{font-size:clamp(48px,8vw,80px);line-height:1.02;margin:0 0 14px;letter-spacing:-.045em}
+    .identity{font-size:clamp(19px,3vw,27px);font-weight:600;margin-bottom:10px}
+    .contact-line{font-size:14px;color:#cbd3cc;letter-spacing:.015em;margin-bottom:30px}
+    .lede{font-size:19px;max-width:730px;color:#e4e8e3;margin-bottom:12px}
+    .site-note{font-size:15px;color:#cbd3cc;max-width:720px}
+    .site-note a{color:var(--paper);font-weight:700}
+    .actions{display:flex;gap:20px;flex-wrap:wrap;margin-top:34px;font-weight:700}
+    .actions .primary{border-bottom:1px solid #dbe1dc;padding-bottom:2px}
     main{padding:72px 0 30px}
     section{padding:26px 0 58px;border-bottom:1px solid var(--line)}
     section:last-of-type{border-bottom:0}
-    .section-label{color:var(--forest-2);margin-bottom:10px}
+    .section-label{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--forest-2);margin-bottom:10px}
     h2{font-size:clamp(30px,5vw,44px);line-height:1.15;margin:0 0 24px;letter-spacing:-.025em}
     h3{font-size:23px;line-height:1.3;margin:0 0 10px}
     p{margin:0 0 16px}
@@ -44,16 +46,21 @@
     .card p:last-child{margin-bottom:0}
     .project-link{display:inline-block;margin-top:10px;font-weight:700}
     .research-note{max-width:820px;font-size:18px}
-    .publication{max-width:860px}
+    .publication-list{display:grid;gap:34px;max-width:880px}
+    .publication-item{padding-bottom:30px;border-bottom:1px solid var(--line)}
+    .publication-item:last-child{padding-bottom:0;border-bottom:0}
+    .publication-item h3{font-size:24px}
     .methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 44px}
     .methods h3{font-size:17px;text-transform:uppercase;letter-spacing:.08em}
     .methods p{color:var(--muted)}
     .connect{display:flex;gap:22px;flex-wrap:wrap;font-weight:700}
+    .about-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:22px;font-weight:700}
     footer{background:var(--forest);color:var(--paper);padding:34px 0;margin-top:38px;font-size:14px}
     @media(max-width:760px){
-      .navlinks{display:none}
-      header{padding-bottom:64px}
-      .hero{padding-top:64px}
+      nav{justify-content:flex-start}
+      .navlinks{gap:15px}
+      header{padding-bottom:62px}
+      .hero{padding-top:58px}
       .grid,.methods{grid-template-columns:1fr}
       main{padding-top:50px}
       section{padding-bottom:46px}
@@ -63,23 +70,26 @@
 <body>
   <header>
     <div class="wrap">
-      <nav>
-        <a class="brand" href="#top">Sushil Rijal</a>
+      <nav aria-label="Primary navigation">
         <div class="navlinks">
+          <a href="#about">About me</a>
           <a href="#research">Research</a>
           <a href="#projects">Projects</a>
-          <a href="#publication">Publication</a>
+          <a href="#publications">Publications</a>
           <a href="#methods">Methods</a>
+          <a href="cv.html">CV</a>
           <a href="#connect">Connect</a>
         </div>
       </nav>
+
       <div class="hero" id="top">
-        <div class="eyebrow">Research & Code</div>
         <h1>Sushil Rijal</h1>
         <div class="identity">Economics · Data · Policy · Infrastructure</div>
+        <div class="contact-line">sushilrijal11 [at] gmail.com</div>
         <p class="lede">I work across economics and public policy, using econometrics, time-series methods, and data analysis to study macroeconomic transmission, development, infrastructure, and policy implementation.</p>
+        <p class="site-note">For a broader profile, writing, resources, and more about me, visit <a href="https://sushilrijal.com">sushilrijal.com ↗</a></p>
         <div class="actions">
-          <a href="#projects">Selected projects ↓</a>
+          <a class="primary" href="cv.html">CV / Resume →</a>
           <a href="https://github.com/sushil-rijal">GitHub ↗</a>
           <a href="https://sushilrijal.com">Main website ↗</a>
         </div>
@@ -88,6 +98,16 @@
   </header>
 
   <main class="wrap">
+    <section id="about">
+      <div class="section-label">About me</div>
+      <h2>Economics informed by infrastructure, institutions, and implementation</h2>
+      <p class="research-note">My background spans economics, civil engineering, public reconstruction, teaching, and quantitative research. That combination shapes my interest in economic development, infrastructure, macroeconomic policy, and how public policy is implemented in practice. I am currently completing an M.S. in Economic Data Analytics at The University of Texas at Arlington.</p>
+      <div class="about-links">
+        <a href="cv.html">View CV →</a>
+        <a href="https://sushilrijal.com">More at sushilrijal.com ↗</a>
+      </div>
+    </section>
+
     <section id="research">
       <div class="section-label">Current research</div>
       <h2>Anchor-Currency Volatility and Macroeconomic Transmission under a Peg</h2>
@@ -116,14 +136,25 @@
       </div>
     </section>
 
-    <section id="publication">
-      <div class="section-label">Publication</div>
-      <div class="publication">
-        <h2>Feature-informed reliability-based merging of crowdsourced labels for digital construction object detection</h2>
-        <p>SeyedeZahra Golazad, <strong>Sushil Rijal</strong>, Sadegh Asgari, Juan C. Medina, and Abbas Rashidi.</p>
-        <p><em>Automation in Construction</em>, 188 (2026), 107031.</p>
-        <p class="meta">Machine learning · Reliability-based label aggregation · Object detection</p>
-        <a class="project-link" href="https://doi.org/10.1016/j.autcon.2026.107031">View publication →</a>
+    <section id="publications">
+      <div class="section-label">Publications & earlier work</div>
+      <h2>Selected research outputs</h2>
+      <div class="publication-list">
+        <article class="publication-item">
+          <h3>Feature-informed reliability-based merging of crowdsourced labels for digital construction object detection</h3>
+          <p>SeyedeZahra Golazad, <strong>Sushil Rijal</strong>, Sadegh Asgari, Juan C. Medina, and Abbas Rashidi.</p>
+          <p><em>Automation in Construction</em>, 188 (2026), 107031.</p>
+          <p class="meta">Machine learning · Reliability-based label aggregation · Object detection</p>
+          <a class="project-link" href="https://doi.org/10.1016/j.autcon.2026.107031">View publication →</a>
+        </article>
+
+        <article class="publication-item">
+          <h3>Life Cycle Costing Comparison of Diesel Bus vs Electric Bus in the Context of Nepal</h3>
+          <p><strong>Sushil Rijal</strong>, Sabin Paudyal, and Sudeep Thapa.</p>
+          <p>Conference research on the financial and environmental lifecycle costs of diesel and electric buses in Nepal, with implications for public transport investment and procurement.</p>
+          <p class="meta">Infrastructure economics · Electric mobility · Lifecycle costing · Nepal</p>
+          <a class="project-link" href="https://www.researchgate.net/publication/375860313_Life_Cycle_Costing_Comparison_of_Diesel_Bus_vs_Electric_Bus_in_the_Context_of_Nepal">View on ResearchGate →</a>
+        </article>
       </div>
     </section>
 
@@ -138,25 +169,21 @@
       </div>
     </section>
 
-    <section id="about">
-      <div class="section-label">About</div>
-      <h2>Economics informed by infrastructure, institutions, and implementation</h2>
-      <p class="research-note">My background spans economics, civil engineering, public reconstruction, teaching, and quantitative research. That combination shapes my interest in economic development, infrastructure, macroeconomic policy, and how public policy is implemented in practice. I am currently completing an M.S. in Economic Data Analytics at The University of Texas at Arlington.</p>
-      <p>For broader research, writing, resources, and my CV, visit <a class="project-link" href="https://sushilrijal.com">sushilrijal.com →</a></p>
-    </section>
-
     <section id="connect">
       <div class="section-label">Connect</div>
       <h2>Elsewhere</h2>
+      <p class="meta" style="margin-bottom:18px">sushilrijal11 [at] gmail.com</p>
       <div class="connect">
         <a href="https://sushilrijal.com">Website ↗</a>
         <a href="https://github.com/sushil-rijal">GitHub ↗</a>
         <a href="https://www.linkedin.com/in/sushilrijal/">LinkedIn ↗</a>
-        <a href="mailto:sushilrijal11@gmail.com">Email ↗</a>
+        <a href="https://x.com/sushilrijal11">X ↗</a>
+        <a href="https://www.researchgate.net/profile/Sushil-Rijal-3">ResearchGate ↗</a>
+        <a href="cv.html">CV / Resume →</a>
       </div>
     </section>
   </main>
 
-  <footer><div class="wrap">© 2026 Sushil Rijal</div></footer>
+  <footer><div class="wrap">© 2026 Sushil Rijal · Economics · Data · Policy · Infrastructure</div></footer>
 </body>
 </html>
