@@ -11,8 +11,10 @@
     a{color:inherit;text-decoration:none}a:hover{text-decoration:underline;text-underline-offset:4px}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
     header{background:var(--forest);color:var(--paper);padding:26px 0 78px}.navlinks{display:flex;justify-content:flex-end;gap:22px;flex-wrap:wrap;font-size:14px}
     .hero{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:center;padding-top:72px}.hero-copy{max-width:720px}h1{font-size:clamp(48px,7vw,76px);line-height:1.02;margin:0 0 14px;letter-spacing:-.045em}.identity{font-size:clamp(19px,3vw,26px);font-weight:650;margin-bottom:10px}.email{font-size:14px;color:#cbd3cc;margin-bottom:28px}.lede{font-size:18px;color:#e4e8e3;margin:0 0 14px}.more{font-size:15px;color:#cbd3cc}.more a{color:var(--paper);font-weight:700}.actions{display:flex;gap:20px;flex-wrap:wrap;margin-top:30px;font-weight:700}.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 42%;border:1px solid rgba(255,255,255,.2)}
-    main{padding:66px 0 30px}section{padding:24px 0 54px;border-bottom:1px solid var(--line)}section:last-of-type{border-bottom:0}.label{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:10px}h2{font-size:clamp(30px,5vw,42px);line-height:1.15;margin:0 0 22px;letter-spacing:-.025em}h3{font-size:22px;line-height:1.3;margin:0 0 10px}p{margin:0 0 16px}.intro{font-size:18px;max-width:840px}.interests{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 32px;margin:24px 0 0;padding:0;list-style:none}.interests li:before{content:"— ";color:var(--muted)}.meta{font-size:14px;color:var(--muted);font-weight:650}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.card{border:1px solid var(--line);padding:28px;background:rgba(255,253,247,.35)}.link{display:inline-block;margin-top:8px;font-weight:700}.publication-list{display:grid;gap:32px;max-width:900px}.pub{padding-bottom:28px;border-bottom:1px solid var(--line)}.pub:last-child{border-bottom:0;padding-bottom:0}.methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 44px}.methods h3{font-size:16px;text-transform:uppercase;letter-spacing:.08em}.methods p{color:var(--muted)}.footer-links{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}footer{background:var(--forest);color:var(--paper);padding:32px 0;margin-top:36px;font-size:14px}
-    @media(max-width:800px){.hero{grid-template-columns:1fr}.portrait{max-width:330px}.navlinks{justify-content:flex-start}.interests,.grid,.methods{grid-template-columns:1fr}.hero{padding-top:54px;gap:36px}}
+    main{padding:66px 0 30px}section{padding:24px 0 54px;border-bottom:1px solid var(--line)}section:last-of-type{border-bottom:0}.label{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:10px}h2{font-size:clamp(30px,5vw,42px);line-height:1.15;margin:0 0 22px;letter-spacing:-.025em}h3{font-size:22px;line-height:1.3;margin:0 0 10px}p{margin:0 0 16px}.intro{font-size:18px;max-width:860px}.interests{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 32px;margin:24px 0 0;padding:0;list-style:none}.interests li:before{content:"— ";color:var(--muted)}.meta{font-size:14px;color:var(--muted);font-weight:650}
+    .background-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 48px}.background-item{border-top:1px solid var(--line);padding-top:18px}.background-item h3{font-size:16px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}.background-item p{margin:0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.card{border:1px solid var(--line);padding:28px;background:rgba(255,253,247,.35)}.link{display:inline-block;margin-top:8px;font-weight:700}.publication-list{display:grid;gap:32px;max-width:900px}.pub{padding-bottom:28px;border-bottom:1px solid var(--line)}.pub:last-child{border-bottom:0;padding-bottom:0}.methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 44px}.methods h3{font-size:16px;text-transform:uppercase;letter-spacing:.08em}.methods p{color:var(--muted)}.footer-links{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}footer{background:var(--forest);color:var(--paper);padding:32px 0;margin-top:36px;font-size:14px}
+    @media(max-width:800px){.hero{grid-template-columns:1fr}.portrait{max-width:330px}.navlinks{justify-content:flex-start}.interests,.background-grid,.grid,.methods{grid-template-columns:1fr}.hero{padding-top:54px;gap:36px}}
   </style>
 </head>
 <body>
@@ -50,11 +52,34 @@
     </ul>
   </section>
 
+  <section id="background">
+    <div class="label">Background</div>
+    <h2>Training and experience</h2>
+    <div class="background-grid">
+      <div class="background-item">
+        <h3>Education</h3>
+        <p><strong>M.S. Economic Data Analytics</strong>, UT Arlington — GPA 4.0, expected Dec 2026.<br>M.A. Economics and M.S. Civil Engineering, Tribhuvan University — 2019.<br>B.E. Civil Engineering, Pulchowk Campus — 2015.</p>
+      </div>
+      <div class="background-item">
+        <h3>Research & teaching</h3>
+        <p>Graduate Teaching Assistant, UT Arlington (2025–present). Research Assistant, University of Utah (2025), with research resulting in a peer-reviewed publication. Lecturer at Madan Bhandari College of Engineering and Kantipur Engineering College (2019–2024).</p>
+      </div>
+      <div class="background-item">
+        <h3>Infrastructure & implementation</h3>
+        <p>Earlier work includes post-earthquake reconstruction with the Government of Nepal, a Team Leader role with UNOPS, and project-based training and consulting in disaster-resilient construction and infrastructure.</p>
+      </div>
+      <div class="background-item">
+        <h3>Selected honors</h3>
+        <p>Wayne Watts Graduate Fellowship (2026); McCrea Economics Scholarship (2025, 2026); Beta Gamma Sigma, International Business Honor Society (2026); Best Paper Award, KEC Transportation Symposium (2019).</p>
+      </div>
+    </div>
+  </section>
+
   <section id="research">
     <div class="label">Current research</div>
     <h2>Anchor-Currency Volatility and Macroeconomic Transmission under a Peg</h2>
-    <p class="intro">Current research examining volatility transmission under a fixed exchange-rate regime, using Nepal’s peg with India as the empirical setting. The project draws on econometric and time-series methods to study how external volatility relates to domestic macroeconomic outcomes.</p>
-    <p class="meta">Econometrics · Time series · Macroeconomic transmission</p>
+    <p class="intro">Developed through an independent study supervised by Prof. Aaron Smallwood, this project examines volatility transmission under Nepal’s fixed exchange-rate arrangement with India. The analysis uses econometric and time-series methods to study how external volatility relates to domestic macroeconomic outcomes.</p>
+    <p class="meta">Independent study · May–July 2026 · Econometrics · Time series</p>
   </section>
 
   <section id="projects">
@@ -63,33 +88,33 @@
     <div class="grid">
       <article class="card">
         <h3>GDP, Capital Stock & Economic Growth — University of Utah</h3>
-        <p>A quantitative project developed at the University of Utah combining capital stock, human capital, productivity, population, and related international datasets. It used ALITE for data integration and was later extended with additional econometric and replication work.</p>
+        <p>A quantitative project combining capital stock, human capital, productivity, population, and related international datasets. It used ALITE for data integration and was later extended with additional econometric and replication work.</p>
         <p class="meta">ALITE · Econometrics · Data integration · Machine learning · Python</p>
         <a class="link" href="https://github.com/sushil-rijal/GDP_Prediction_ALITE">View repository</a>
       </article>
       <article class="card">
-        <h3>Texas Electricity Production Forecasting</h3>
-        <p>A time-series forecasting project using Texas electricity production data to compare seasonal forecasting specifications and evaluate out-of-sample predictive performance.</p>
-        <p class="meta">R · Time series · SARIMA · Forecasting · 2.8% MAPE</p>
+        <h3>Texas Electricity Generation Forecasting</h3>
+        <p>Built and validated seasonal forecasting models in R using unit-root testing, BIC and AICc model selection, STL decomposition, Box-Cox transformation, and residual diagnostics. The final SARIMA specification achieved 2.8% MAPE on a 12-month holdout sample.</p>
+        <p class="meta">R · SARIMA · Forecasting · EIA data · 2.8% MAPE</p>
         <a class="link" href="https://github.com/sushil-rijal/Texas_EIA">View repository</a>
       </article>
     </div>
   </section>
 
   <section id="publications">
-    <div class="label">Publications & earlier work</div>
-    <h2>Selected research outputs</h2>
+    <div class="label">Publications & selected research</div>
+    <h2>Research outputs</h2>
     <div class="publication-list">
       <article class="pub">
         <h3>Feature-informed reliability-based merging of crowdsourced labels for digital construction object detection</h3>
         <p>SeyedeZahra Golazad, <strong>Sushil Rijal</strong>, Sadegh Asgari, Juan C. Medina, and Abbas Rashidi.</p>
-        <p><em>Automation in Construction</em>, 188 (2026), 107031.</p>
+        <p><em>Automation in Construction</em>, 188 (2026), 107031. Developed from research at the University of Utah.</p>
         <a class="link" href="https://doi.org/10.1016/j.autcon.2026.107031">View publication</a>
       </article>
       <article class="pub">
         <h3>Life Cycle Costing Comparison of Diesel Bus vs Electric Bus in the Context of Nepal</h3>
         <p><strong>Sushil Rijal</strong>, Sabin Paudyal, and Sudeep Thapa.</p>
-        <p>Earlier research comparing lifecycle costs of diesel and electric buses in Nepal.</p>
+        <p>Lifecycle-cost research on diesel and electric bus fleets in Nepal; Best Paper Award at the KEC Transportation Symposium (2019).</p>
         <a class="link" href="https://www.researchgate.net/publication/375860313_Life_Cycle_Costing_Comparison_of_Diesel_Bus_vs_Electric_Bus_in_the_Context_of_Nepal">View on ResearchGate</a>
       </article>
     </div>
@@ -99,10 +124,10 @@
     <div class="label">Methods & tools</div>
     <h2>Quantitative toolkit</h2>
     <div class="methods">
-      <div><h3>Econometrics</h3><p>Panel data · Local projections · VAR models · Structural change · Replication workflows</p></div>
-      <div><h3>Time series</h3><p>Forecasting · GARCH-family models · Bayesian stochastic volatility</p></div>
-      <div><h3>Data</h3><p>R · Python · Stata · SQL · Data integration · Reproducible analysis</p></div>
-      <div><h3>Machine learning</h3><p>Tree-based methods · Predictive comparison · Model interpretation · SHAP</p></div>
+      <div><h3>Econometrics</h3><p>Panel data · Difference-in-differences · Instrumental variables · GMM · Local projections · Nonlinear and interaction models · Diagnostics</p></div>
+      <div><h3>Time series</h3><p>ARIMA/SARIMA · ARIMAX · VAR/VECM · Unit roots and cointegration · Forecasting · Structural stability · Volatility modeling</p></div>
+      <div><h3>Programming & data</h3><p>Python · R · Stata · SQL · MATLAB · EViews · Excel · Tableau · Power BI</p></div>
+      <div><h3>Machine learning</h3><p>Random Forest · XGBoost · PCA · SHAP · Feature engineering · Cross-validation</p></div>
     </div>
   </section>
 </main>
