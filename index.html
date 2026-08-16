@@ -12,16 +12,16 @@
     header{background:var(--forest);color:var(--paper);padding:26px 0 78px}.navlinks{display:flex;justify-content:flex-end;gap:22px;flex-wrap:wrap;font-size:14px}
     .hero{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:center;padding-top:72px}.hero-copy{max-width:720px}h1{font-size:clamp(48px,7vw,76px);line-height:1.02;margin:0 0 14px;letter-spacing:-.045em}.identity{font-size:clamp(19px,3vw,26px);font-weight:650;margin-bottom:10px}.email{font-size:14px;color:#cbd3cc;margin-bottom:28px}.lede{font-size:18px;color:#e4e8e3;margin:0 0 14px}.more{font-size:15px;color:#cbd3cc}.more a{color:var(--paper);font-weight:700}.actions{display:flex;gap:20px;flex-wrap:wrap;margin-top:30px;font-weight:700}.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 42%;border:1px solid rgba(255,255,255,.2)}
     main{padding:66px 0 30px}section{padding:24px 0 54px;border-bottom:1px solid var(--line)}section:last-of-type{border-bottom:0}.label{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin-bottom:22px}h2{font-size:clamp(30px,5vw,42px);line-height:1.15;margin:0 0 22px;letter-spacing:-.025em}h3{font-size:22px;line-height:1.3;margin:0 0 10px}p{margin:0 0 16px}.intro{font-size:18px;max-width:860px}.interests{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 32px;margin:24px 0 0;padding:0;list-style:none}.interests li:before{content:"— ";color:var(--muted)}.meta{font-size:14px;color:var(--muted);font-weight:650}
-    .background-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 48px}.background-item{border-top:1px solid var(--line);padding-top:18px}.background-item h3{font-size:16px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px}.background-item p{margin:0;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.card{border:1px solid var(--line);padding:28px;background:rgba(255,253,247,.35)}.link{display:inline-block;margin-top:8px;font-weight:700}.publication-list{display:grid;gap:32px;max-width:900px}.pub{padding-bottom:28px;border-bottom:1px solid var(--line)}.pub:last-child{border-bottom:0;padding-bottom:0}.methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 44px}.methods h3{font-size:16px;text-transform:uppercase;letter-spacing:.08em}.methods p{color:var(--muted)}.footer-links{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}footer{background:var(--forest);color:var(--paper);padding:32px 0;margin-top:36px;font-size:14px}
-    @media(max-width:800px){.hero{grid-template-columns:1fr}.portrait{max-width:330px}.navlinks{justify-content:flex-start}.interests,.background-grid,.grid,.methods{grid-template-columns:1fr}.hero{padding-top:54px;gap:36px}}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.card{border:1px solid var(--line);padding:28px;background:rgba(255,253,247,.35)}.link{display:inline-block;margin-top:8px;font-weight:700}.publication-list{display:grid;gap:32px;max-width:900px}.pub{padding-bottom:28px;border-bottom:1px solid var(--line)}.pub:last-child{border-bottom:0;padding-bottom:0}.methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 44px}.methods h3,.background-item h3{font-size:16px;text-transform:uppercase;letter-spacing:.08em}.methods p,.background-item p{color:var(--muted)}
+    .background-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 48px}.background-item{border-top:1px solid var(--line);padding-top:18px}.background-item h3{margin-bottom:10px}.background-item p{margin:0}.honor{display:block;margin-bottom:7px}.footer-links{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}footer{background:var(--forest);color:var(--paper);padding:32px 0;margin-top:36px;font-size:14px}
+    @media(max-width:800px){.hero{grid-template-columns:1fr}.portrait{max-width:330px}.navlinks{justify-content:flex-start}.interests,.grid,.methods,.background-grid{grid-template-columns:1fr}.hero{padding-top:54px;gap:36px}}
   </style>
 </head>
 <body>
 <header>
   <div class="wrap">
     <nav class="navlinks" aria-label="Primary navigation">
-      <a href="#interests">Interests</a><a href="#research">Research</a><a href="#background">Background</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#methods">Methods</a><a href="cv.html">CV</a>
+      <a href="#interests">Interests</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#methods">Methods</a><a href="#background">Background</a><a href="cv.html">CV</a>
     </nav>
     <div class="hero">
       <div class="hero-copy">
@@ -56,29 +56,7 @@
     <div class="label">Current research</div>
     <h2>Anchor-Currency Volatility and Macroeconomic Transmission under a Peg</h2>
     <p class="intro">This project, developed through an independent study with Prof. Aaron Smallwood, examines volatility transmission under Nepal’s fixed exchange-rate arrangement with India. The analysis uses econometric and time-series methods to study how external volatility relates to domestic macroeconomic outcomes.</p>
-    <p class="meta">Independent study with Prof. Aaron Smallwood · Econometrics · Time series</p>
-  </section>
-
-  <section id="background">
-    <div class="label">Background</div>
-    <div class="background-grid">
-      <div class="background-item">
-        <h3>Education</h3>
-        <p><strong>M.S. Economic Data Analytics</strong>, UT Arlington — GPA 4.0, expected Dec 2026.<br>M.A. Economics and M.S. Civil Engineering, Tribhuvan University — 2019.<br>B.E. Civil Engineering, Pulchowk Campus, Tribhuvan University — 2015.</p>
-      </div>
-      <div class="background-item">
-        <h3>Research & teaching</h3>
-        <p>Graduate Teaching Assistant, UT Arlington (Sep 2025–present). Research Assistant, University of Utah (Jan–Aug 2025), following a Graduate Teaching Assistant role there (Aug–Dec 2024).<br><br>Lecturer at Kantipur Engineering College (May 2019–May 2022) and Madan Bhandari College of Engineering (Jun 2022–May 2024).</p>
-      </div>
-      <div class="background-item">
-        <h3>Infrastructure experience</h3>
-        <p>Post-earthquake reconstruction with the Government of Nepal (Apr–Dec 2016), disaster-resilient construction training (2017–2023), and a Team Leader role with UNOPS (Jan–Apr 2019), alongside project-based engineering and economic-feasibility work.</p>
-      </div>
-      <div class="background-item">
-        <h3>Selected honors</h3>
-        <p>Wayne Watts Graduate Fellowship (2026); McCrea Economics Scholarship (2025, 2026); Beta Gamma Sigma, International Business Honor Society (2026).</p>
-      </div>
-    </div>
+    <p class="meta">Independent study · Econometrics · Time series · Bayesian stochastic volatility</p>
   </section>
 
   <section id="projects">
@@ -92,8 +70,8 @@
       </article>
       <article class="card">
         <h3>Texas Electricity Generation Forecasting</h3>
-        <p>Built and validated seasonal forecasting models in R using unit-root testing, BIC and AICc model selection, STL decomposition, Box-Cox transformation, and residual diagnostics. The final SARIMA specification achieved 2.8% MAPE on a 12-month holdout sample.</p>
-        <p class="meta">R · SARIMA · Forecasting · EIA data · 2.8% MAPE</p>
+        <p>Forecasts monthly Texas electricity generation using seasonal time-series models and weather information. The project compares SARIMA, SARIMAX, and neural-network forecasts and combines SARIMA and neural-network forecasts in an equal-weight ensemble. On a six-month holdout, the ensemble achieved 1.80% MAPE.</p>
+        <p class="meta">R · SARIMA · SARIMAX · Neural network · Ensemble · EIA data · 1.80% MAPE</p>
         <a class="link" href="https://github.com/sushil-rijal/Texas_EIA">View repository</a>
       </article>
     </div>
@@ -120,10 +98,32 @@
   <section id="methods">
     <div class="label">Methods & tools</div>
     <div class="methods">
-      <div><h3>Econometrics</h3><p>Panel data · Difference-in-differences · Instrumental variables · GMM · Local projections · Nonlinear and interaction models · Diagnostics</p></div>
+      <div><h3>Econometrics</h3><p>Causal inference · Panel data · Difference-in-differences · Instrumental variables · GMM · Local projections · Nonlinear and interaction models · Diagnostics</p></div>
       <div><h3>Time series</h3><p>ARIMA · SARIMA · ARIMAX · VAR · VECM · Unit roots and cointegration · Forecasting · Structural stability · Volatility models</p></div>
-      <div><h3>Programming & data</h3><p>Python · R · Stata · SQL · MATLAB · EViews · Excel · Tableau · Power BI</p></div>
-      <div><h3>Machine learning</h3><p>Random Forest · XGBoost · PCA · SHAP · Feature engineering · Cross-validation</p></div>
+      <div><h3>Programming & data</h3><p>Data wrangling · Python · R · Stata · SQL · MATLAB · EViews · Excel · Tableau · Power BI</p></div>
+      <div><h3>Machine learning</h3><p>Random Forest · XGBoost · Neural networks · PCA · SHAP · Feature engineering · Cross-validation</p></div>
+    </div>
+  </section>
+
+  <section id="background">
+    <div class="label">Background</div>
+    <div class="background-grid">
+      <div class="background-item">
+        <h3>Education</h3>
+        <p><strong>M.S. Economic Data Analytics</strong>, UT Arlington — GPA 4.0, expected Dec 2026.<br>M.A. Economics and M.S. Civil Engineering, Tribhuvan University — 2019.<br>B.E. Civil Engineering, Pulchowk Campus, Tribhuvan University — 2015.</p>
+      </div>
+      <div class="background-item">
+        <h3>Research & teaching</h3>
+        <p>Graduate Teaching Assistant, UT Arlington (Sep 2025–present). Research Assistant, University of Utah (Jan–Aug 2025), following a Graduate Teaching Assistant role there (Aug–Dec 2024).<br><br>Lecturer at Kantipur Engineering College (May 2019–May 2022) and Madan Bhandari College of Engineering (Jun 2022–May 2024).</p>
+      </div>
+      <div class="background-item">
+        <h3>Infrastructure experience</h3>
+        <p>Post-earthquake reconstruction with the Government of Nepal (Apr–Dec 2016) and Team Leader with UNOPS (Jan–Apr 2019). Part-time and project-based work included disaster-resilient construction training (2017–2023), training more than 1,000 engineers, sub-engineers, and masons, alongside engineering and economic-feasibility assignments.</p>
+      </div>
+      <div class="background-item">
+        <h3>Selected honors</h3>
+        <p><span class="honor">Wayne Watts Graduate Fellowship (2026)</span><span class="honor">McCrea Economics Scholarship (2025, 2026)</span><span class="honor">Beta Gamma Sigma, International Business Honor Society (2026)</span></p>
+      </div>
     </div>
   </section>
 </main>
